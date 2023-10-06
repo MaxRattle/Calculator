@@ -99,3 +99,18 @@ document.querySelector('.buttons').onclick = (event) =>{
         }
 
 }
+
+
+
+let themeMode = document.querySelector(".theme") //почему-то getElementsClassNames не робит
+themeMode.onclick = function(){
+    let themeChange = document.getElementById("themeChange")
+    
+    if(themeChange.getAttribute("href") == "style.css"){
+        themeChange.href = "style_v2.css"
+        console.log('clicked')
+    }else{
+        themeChange.href = "style.css"
+        console.log('clicked')
+    }
+}
